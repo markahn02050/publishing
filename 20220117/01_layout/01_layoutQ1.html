@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <style>
+        *{margin:0; padding:0;}
         #header { border:2px dotted red; height:100px;}
         body {width : 550px;}
-        #content {border:2px dotted blue;}
-        .leftsidebar {border:1px solid grey; width:110; height:300px; float:left;}
-        .contents {border:1px solid grey; width:330px; height:300px; float:left;}
-        .rightsidebar{border:1px solid grey; width:110; height:300px; float:right;}
-        #footer {border:2px dashed green; height: 100px; clear:both;}
-       /* #content:after{
-          content:""; 
-          clear:both; 
-          display: block
-          
-        } */
+        #content {border:2px dotted blue; height:300px; float:left;}
+        .leftsidebar {border:1px solid blue; width:100px; height:300px; float:left;}
+        .contents {border:1px solid blue; width:340px; height:300px; float:left;}
+        .rightsidebar{border:1px solid blue; width:100px; height:300px; float:right;}
+        #footer {border:1px dashed green; height: 100px; clear:both;}
+        #content > div {display:inline-block;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,30 +19,30 @@
 </head>
 <body>
     <div id = "header">
-        <p>헤더가 들어갈 자리입니다.</p>
+        헤더가 들어갈 자리입니다.<br/>
         border:2px dotted red; height:100px;
     </div>
 
     <div id = "content">
         <div class = "leftsidebar">
-            왼쪽 사이드바 자리
+            왼쪽 사이드바 자리<br/>
            
         </div>
 
         <div class = "contents">
-            컨텐츠 자리
+            컨텐츠 자리<br/>
             
         </div>
 
         <div class = "rightsidebar">
-            오른쪽 사이드바 자리
+            오른쪽 사이드바 자리<br/>
             
         </div>
 
     </div>
 
     <div id = "footer">
-        푸터가 들어갈 자리입니다.
+        푸터가 들어갈 자리입니다.<br/>
     </div>
 </body>
 </html>
