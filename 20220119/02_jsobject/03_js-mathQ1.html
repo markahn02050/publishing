@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // 1. img폴더를 02_object폴더 내부에 만들어주세요.
+        // 2. 그림파일 3개를 안에 다운받아주시고
+        // 3. 파일명은 img0, img1, img2로 해주세요.
+        // 4. 난수발생을 통해 그림파일 3개가 랜덤하게
+        // 화면에 표시되도록 코드를 작성해주세요.
+
+        var imgArr = new Array();
+
+        imgArr[0] = "<img src = 'img/img0.jpg' width = '500px'/>";
+        imgArr[1] = "<img src = 'img/img1.jpg' width = '500px'/>";
+        imgArr[2] = "<img src = 'img/img2.jpg' width = '500px'/>";
+
+        var randNum = Math.floor((Math.random()) * 3);
+
+        document.write(imgArr[randNum]);
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
