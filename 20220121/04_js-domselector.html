@@ -59,7 +59,7 @@
             // 아래쪽 ul#list에서 li만 6개 받아와 ulLi 변수에 저장하기.
             var ulLi = myList[1].getElementsByTagName("li");
             console.log(ulLi);
-            for(var i = 0; i < ulLi.length; i++){
+            for(var i in ulLi){
                 //조건문으로 홀,짝수 번째 따로 처리   
                 if(i % 2 !== 0){
                     ulLi[i].style.backgroundColor="gold";// gold색으로처리
