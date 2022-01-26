@@ -83,17 +83,20 @@
             // 콘솔에 찍어주세요(.attr() 이용하기)
             console.log($("#list3 > li").eq(1).attr("class"));
 
-            // 9. id=list3인 요소의 하위 li중 2번째(1) 요소의
+            // 9. #list3인 요소의 하위 li중 2번째(1) 요소의
             // 클래스 속성값을 obj2로 바꿔주시고,
-            // .obj2에 대해서 배경색을 노란색으로 바꿔주세요
-            $("#list3 li").eq(1).after("class", "obj2");
-            
-            // 10. #list3인 요소의 하위 li중 첫번째(0) 요소의
-            // 클래스 속성에 obj3을 추가합니다.
-            // addClass()를 이용해주세요.
-            // 그다음 obj3를 선택해서 글씨색을 빨간색으로 바꿔주세요
+            // .obj2에 대해서 배경색을 노란색으로 바꿔주세요.
+            $("#list3 li").eq(1).attr("class", "obj2");
+            $(".obj2").css("background-color", "yellow");
+
+            // 10 #list3인 요소의 하위 li중 첫번째(0) 요소의
+            // 클래스 속성에 obj3를 추가합니다.
+            // .addClass() 를 이용해주세요.
+            // 그다음 .obj3를 선택해서 글씨색을 빨간색으로 바꿔주세요.
             $("#list3 li").eq(0).addClass("obj3");
             $(".obj3").css("color", "red");
+
+
         });
     </script>
     <title>Document</title>
